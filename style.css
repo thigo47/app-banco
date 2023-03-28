@@ -4,6 +4,13 @@
     font-family: sans-serif;
 }
 
+header{
+    background-image: linear-gradient(to left , #03045E ,#023E8A);
+    height: 100px;
+    color: white;
+    font-weight: bolder;
+}
+
 #sessaocabeça {
     display: flex;
     justify-content: space-between;
@@ -12,13 +19,34 @@
     background-image: linear-gradient(to left , #03045E ,#023E8A);
     color: white;
     font-weight: bolder;
-  }
+}
 
+#container1{
+    display: flex;
+    align-items: center;
+}
+
+#container2{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.esconder{
+    align-self: flex-end;
+}
+
+#container3{
+    display: flex;
+    align-items: flex-end;
+    align-self: flex-end;
+}
 
 body{
-background-image: linear-gradient(to bottom  , #CAF0F8 , #ADE8F4 , #90E0EF);
-background-attachment: fixed;
+    background-image: linear-gradient(to bottom  , #CAF0F8 , #ADE8F4 , #90E0EF);
+    background-attachment: fixed;
 }
+
 #testes{
     background-color: rgb(11, 0, 83);
     color: rgb(0, 0, 0);
@@ -28,3 +56,4 @@ background-attachment: fixed;
     border-radius: 30px;
     box-shadow: 5px 5px 5px black;
 }
+/*problema do cabeçalho ainda sem resolver
