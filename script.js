@@ -1,6 +1,7 @@
 let saldoconta = document.getElementById("saldoconta")
 let quantosacar = document.getElementById("quantosacar")
 let quantodepositar = document.getElementById("quantodepositar")
+let pdohistorico = document.getElementById("historico")
 
 let his = []
 
@@ -53,6 +54,7 @@ function sacar(params) {
                     
                     saldo -= snum.value
                     saldoconta.innerHTML = `Saldo da conta : ${saldo.toLocaleString('de-DE', { style: 'currency', currency: 'EUR'})}`
+                    his.push(`Valor Sacado ${snum.value} .<br>`)
                 }
             }
             saque.appendChild(saqueagr)
@@ -95,9 +97,7 @@ function depositar(params) {
 
                novadivdeposito.innerHTML = `Você depositou ${np.value} €`
 
-                his.push(`Valor depositado${np.value}`)
-
-                window.alert(his)
+                his.push(`Valor depositado ${np.value} <br>`)
 
                qtdeposito.appendChild(novadivdeposito)
              }
@@ -107,5 +107,31 @@ function depositar(params) {
 }
 
 function historico() {
+    let ph = document.createElement("p")
+    ph.innerHTML += his 
+
+    pdohistorico.appendChild(ph)
+}
+
+//     Por enquanto a principal parte esta pronta
+
+//historico em menu
+
+function teste(params) {
+
+   
+        let testes = document.getElementById("testes")
+    testes.style.backgroundColor = "red"
+
+    let testemenu = document.createElement("ul")
+    testemenu.id = "lista"
+
+    testes.appendChild(testemenu)
+    
+    let item = document.createElement("li")
+    item.id  = "itemlista"
+    item.innerHTML=his
+
+    lista.appendChild(item)
     
 }
