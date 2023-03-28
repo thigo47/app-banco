@@ -119,19 +119,24 @@ function historico() {
 
 function teste(params) {
 
-   
+    if (his.length == 0 ) {
+        window.alert("sem historico")
+    }else{
         let testes = document.getElementById("testes")
-    testes.style.backgroundColor = "red"
-
-    let testemenu = document.createElement("ul")
-    testemenu.id = "lista"
-
-    testes.appendChild(testemenu)
+        testes.style.backgroundColor = "red"
     
-    let item = document.createElement("li")
-    item.id  = "itemlista"
-    item.innerHTML=his
-
-    lista.appendChild(item)
+        let testemenu = document.createElement("ul")
+        testemenu.id = "lista"
     
+        testes.appendChild(testemenu)
+        
+        let item = document.createElement("li")
+        item.id  = "itemlista"
+        item.innerHTML=his
+    
+        lista.appendChild(item)
+        
+    }
+   
+        
 }
