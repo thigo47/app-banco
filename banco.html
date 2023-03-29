@@ -16,36 +16,45 @@
             </div>
   
             <div id="container2">
-                <div class="econder">esconder o valor</div>
+                <div class="econder" onclick="esconder()">
+                <img id="minhaimg" src="midia/Imagens/eye.opn.png" alt="olho aberto"></div>
             </div>
-            <div id="container3">
-                <div class="nome">aqui nome</div>
-            </div> 
         </section>
+        <div id="container3">
+            <div class="nome">Olá , Thiago Portilho !</div>
+        </div> 
        
     </header>
 
     <body>
-        <section>
-            <div id="saldoconta">Saldo da conta : </div>
+            <section id="cabeçaconta">
+                <div id="contapai">
+                    Conta
+                    <div id="saldoconta"></div>
+                </div>
+            </section>
+           
+<section id="botaopai">
+    
+                <button class="botoes"  onclick="sacar()">sacar</button>
+    
+                <button class="botoes" onclick="depositar()">depositar</button>
 
-            <button onclick="sacar()">sacar</button>
+                <button class="botoes" id="testes" onclick="teste()">
+                    menu
+                   </button>
+</section>
+    <section id="paitxt">
+        <div id="quantosacar"></div>
+    
+        <div id="quantodepositar"></div>
+    </section>
 
-            <button onclick="depositar()">depositar</button>
-
-            <div id="quantosacar"></div>
-
-            <div id="quantodepositar"></div>
-
-            <div id="historico"><button onclick="historico()">Historico</button></div>
-
-        </section>
+        
     </body>
 
     <footer>
-       <div id="testes" onclick="teste()">
-        menu
-       </div>
+      
 
     </footer>
 

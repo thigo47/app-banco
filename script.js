@@ -38,6 +38,7 @@ function sacar(params) {
             snum = document.getElementById("numtxt")
 
             let saqueagr = document.createElement("button")
+            saqueagr.classList.add ("botoesdinamicos")
             saqueagr.innerHTML = "Saque agora"
 
             saqueagr.onclick = ()=>{
@@ -82,6 +83,7 @@ function depositar(params) {
         qtdeposito.appendChild(numd)
 
          let depositeagr = document.createElement("button")
+         depositeagr.classList.add ("botoesdinamicos")
          depositeagr.innerHTML = "Depositar"
 
          let np = document.getElementById("numdep")
@@ -137,6 +139,20 @@ function teste(params) {
         lista.appendChild(item)
         
     }
+      
+}
+let botaoclicado = false
+let trocaemoji = document.getElementById("esconder")
+let minhaimg = document.getElementById("minhaimg") 
+function esconder() {    
    
-        
+    if (botaoclicado) {
+        saldoconta.innerHTML= `${saldoeuro}`
+        botaoclicado = false
+        minhaimg.src ="midia/Imagens/eye.opn.png"
+    }else{
+        minhaimg.src ="midia/Imagens/eyes.close.png"
+        saldoconta.innerHTML = "******"
+        botaoclicado = true
+    }
 }

@@ -6,9 +6,10 @@
 
 header{
     background-image: linear-gradient(to left , #03045E ,#023E8A);
-    height: 100px;
+
     color: white;
     font-weight: bolder;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.445);
 }
 
 #sessaocabeça {
@@ -19,41 +20,107 @@ header{
     background-image: linear-gradient(to left , #03045E ,#023E8A);
     color: white;
     font-weight: bolder;
+    
 }
 
 #container1{
     display: flex;
     align-items: center;
+    padding-left: 10px;
+}
+.ft{
+    background-color: red;
+    border-radius: 20px;
+    width: 40px;
+    height: 40px;
 }
 
 #container2{
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
+    padding-right: 10px;
 }
 
 .esconder{
     align-self: flex-end;
+    
 }
+.nome{
+    padding-left: 10px;
+    padding-bottom: 10px;
 
-#container3{
-    display: flex;
-    align-items: flex-end;
-    align-self: flex-end;
 }
 
 body{
-    background-image: linear-gradient(to bottom  , #CAF0F8 , #ADE8F4 , #90E0EF);
+    background-image: linear-gradient(to bottom  ,#023E8A,  #ADE8F4 , #90E0EF);
     background-attachment: fixed;
 }
 
-#testes{
-    background-color: rgb(11, 0, 83);
-    color: rgb(0, 0, 0);
-    width: 50px;
-    height: 50px;
-    margin: auto;
-    border-radius: 30px;
-    box-shadow: 5px 5px 5px black;
+/*corpo*/
+#cabeçaconta{
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
-/*problema do cabeçalho ainda sem resolver
+#contapai{
+    padding-left: 20px;
+}
+#saldoconta{
+    padding-top: 10px;
+}
+#botaopai{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+}
+.botoes{
+    border-radius: 30px;
+    width: 60px;
+    height: 60px;
+    border-color:#023d8a00;
+    box-shadow: 5px 5px  10px #515151;
+    transition: 1s;
+}
+.botoes:hover{
+    background-color: white;
+    box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.447);
+    transition-delay: 0.5;
+    
+}
+
+.botoes:active{
+    background-color: white;
+    box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.447);
+    transition-delay: 0.1; 
+}
+#paitxt{
+    width: 300px;
+    text-align: center;
+    margin: auto;
+    border-radius: 25px;
+    margin-top: 50px;
+    box-shadow: 5px  5px 10px rgba(0, 0, 0, 0.247);
+    
+}
+#quantosacar{
+    
+}
+#numtxt{
+    border-radius: 20px;
+    border-color: #ade8f400;
+    box-shadow: 5px  5px 10px rgba(0, 0, 0, 0.247);
+    
+}
+.botoesdinamicos{
+    border-color: #023d8a00;
+    border-radius: 30px;
+    width: 60px;
+    height: 40px;
+    border-color:#023d8a00;
+    box-shadow: 5px 5px  10px #515151;
+    transition: 1s;
+    
+}
