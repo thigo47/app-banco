@@ -31,7 +31,8 @@ function sacar(params) {
 
             let num = document.createElement("input")
             num.type = "number"
-            num.id = "numtxt"
+            num.classList.add ("numtxt")
+            num.id ="numtxt"
             
             qtsacar.appendChild(num)
 
@@ -49,12 +50,14 @@ function sacar(params) {
                 } else if(snum.value == 0) {
                     window.alert("valor invalido")
                 }else{
-                    novadiv.innerHTML += `Você sacou ${snum.value} € <br>` // atualiza o valor da div
+                    novadiv.innerHTML += `Você sacou ${snum.value} €`
+                    novadiv.id = "vocesacou"
+
                     quantosacar.appendChild(novadiv)
 
                     
                     saldo -= snum.value
-                    saldoconta.innerHTML = `Saldo da conta : ${saldo.toLocaleString('de-DE', { style: 'currency', currency: 'EUR'})}`
+                    saldoconta.innerHTML = `${saldo.toLocaleString('de-DE', { style: 'currency', currency: 'EUR'})}`
                     his.push(`Valor Sacado ${snum.value} .<br>`)
                 }
             }
@@ -72,47 +75,44 @@ function depositar(params) {
         if (!qtdeposito) {
             qtdeposito = document.createElement("p")
             qtdeposito.id = "qtdeposito"
-        qtdeposito.innerHTML = `Quando voce deseja Depositar `
+        qtdeposito.innerHTML = `Quando voce deseja Depositar`
 
         quantodepositar.appendChild(qtdeposito)
 
         let numd = document.createElement("input")
         numd.type = "number"
         numd.id = "numdep"
+        numd.classList.add ("numtxt")
 
         qtdeposito.appendChild(numd)
 
          let depositeagr = document.createElement("button")
          depositeagr.classList.add ("botoesdinamicos")
+         depositeagr.id = "depositeagrid"
          depositeagr.innerHTML = "Depositar"
 
          let np = document.getElementById("numdep")
 
-         if (np == 0) {
-            window.alert("Valor invalido")
-         }else if ( np.length == 0){
-            window.alert("Valor invalido , por favor insira um valor valido")
-         }else{
+            {
             depositeagr.onclick = ()=>{
-                saldo =  saldo + Number(np.value)
-                saldoconta.innerHTML = `Saldo da conta : ${saldo.toLocaleString('de-DE', { style: 'currency', currency: 'EUR'})}`
-
-               novadivdeposito.innerHTML = `Você depositou ${np.value} €`
-
-                his.push(`Valor depositado ${np.value} <br>`)
-
-               qtdeposito.appendChild(novadivdeposito)
-             }
-             qtdeposito.appendChild(depositeagr)           
+                if (np.value == 0) {
+                    window.alert("Valor invalido")
+                 }else if ( np.value.length == 0){
+                    window.alert("Valor invalido , por favor insira um valor valido")
+                 }else{saldo =  saldo + Number(np.value)
+                    saldoconta.innerHTML = `${saldo.toLocaleString('de-DE', { style: 'currency', currency: 'EUR'})}`
+    
+                   novadivdeposito.innerHTML = `Você depositou ${np.value} €`
+    
+                    his.push(`Valor depositado ${np.value} <br>`)
+    
+                   qtdeposito.appendChild(novadivdeposito)
+                 }
+                    }
+                    qtdeposito.appendChild(depositeagr) 
+                          
          }         
         }
-}
-
-function historico() {
-    let ph = document.createElement("p")
-    ph.innerHTML += his 
-
-    pdohistorico.appendChild(ph)
 }
 
 //     Por enquanto a principal parte esta pronta
@@ -125,7 +125,6 @@ function teste(params) {
         window.alert("sem historico")
     }else{
         let testes = document.getElementById("testes")
-        testes.style.backgroundColor = "red"
     
         let testemenu = document.createElement("ul")
         testemenu.id = "lista"

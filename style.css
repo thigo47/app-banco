@@ -29,23 +29,25 @@ header{
     padding-left: 10px;
 }
 .ft{
-    background-color: red;
     border-radius: 20px;
     width: 40px;
     height: 40px;
+}
+#imgperfil{
+    width: 40px;
 }
 
 #container2{
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
-    padding-right: 10px;
+    margin-right: 10px;
 }
 
 .esconder{
     align-self: flex-end;
-    
 }
+
 .nome{
     padding-left: 10px;
     padding-bottom: 10px;
@@ -96,23 +98,30 @@ body{
     box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.447);
     transition-delay: 0.1; 
 }
-#paitxt{
-    width: 300px;
-    text-align: center;
-    margin: auto;
-    border-radius: 25px;
-    margin-top: 50px;
-    box-shadow: 5px  5px 10px rgba(0, 0, 0, 0.247);
-    
-}
+
 #quantosacar{
-    
+    margin-top: 50px;
+    text-align: center;
 }
-#numtxt{
+.numtxt{
     border-radius: 20px;
     border-color: #ade8f400;
     box-shadow: 5px  5px 10px rgba(0, 0, 0, 0.247);
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
     
+}
+#depositeagrid{
+    margin-bottom: 15px;
+}
+#quantodepositar{
+    margin-top: 30px;
+    text-align: center;
+}
+#vocesacou{
+    margin-top: 15px;
 }
 .botoesdinamicos{
     border-color: #023d8a00;
@@ -123,4 +132,13 @@ body{
     box-shadow: 5px 5px  10px #515151;
     transition: 1s;
     
+}
+.botoesdinamicos:hover{
+        background-color: white;
+        box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.447);
+        transition-delay: 0.5;
+}
+
+#lista{
+    margin-top: 50px;
 }
