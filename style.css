@@ -1,4 +1,4 @@
-@media(max-width:460px){
+@media(max-width:460px) , (orientation:portrait){
     *{
         margin: 0px;
         padding: 0px;
@@ -144,7 +144,157 @@
         margin-top: 50px;
     }
 }
+@media(min-width: 470px){
+    #sessaocorpo{
+        width: 400px;
+        margin: auto;
+        text-align: center;
 
+    }
+    *{
+        margin: 0px;
+        padding: 0px;
+        font-family: sans-serif;
+    }
+    
+    header{
+        background-image: linear-gradient(to left , #03045E ,#023E8A);
+        color: white;
+        font-weight: bolder;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.445);
+    }
+    
+    #sessaocabeça {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        height: 100px;
+        background-image: linear-gradient(to left , #03045E ,#023E8A);
+        color: white;
+        font-weight: bolder;
+        
+    }
+    
+    #container1{
+        display: flex;
+        align-items: center;
+        padding-left: 10px;
+    }
+    .ft{
+        border-radius: 20px;
+        width: 40px;
+        height: 40px;
+    }
+    #imgperfil{
+        width: 40px;
+    }
+    
+    #container2{
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        margin-right: 10px;
+    }
+    
+    .esconder{
+        align-self: flex-end;
+    }
+    
+    .nome{
+        padding-left: 10px;
+        padding-bottom: 10px;
+    
+    }
+    
+    body{
+        background-image: linear-gradient(to bottom  ,#023E8A,  #ADE8F4 , #90E0EF);
+        background-attachment: fixed;
+    }
+    
+    /*corpo*/
+    #cabeçaconta{
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    #contapai{
+        padding-left: 20px;
+    }
+    #saldoconta{
+        padding-top: 10px;
+    }
+    #botaopai{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 20px;
+    }
+    .botoes{
+        border-radius: 30px;
+        width: 60px;
+        height: 60px;
+        border-color:#023d8a00;
+        box-shadow: 5px 5px  10px #515151;
+        transition: 1s;
+    }
+    .botoes:hover{
+        background-color: white;
+        box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.447);
+        transition-delay: 0.5;
+        
+    }
+    
+    .botoes:active{
+        background-color: white;
+        box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.447);
+        transition-delay: 0.1; 
+    }
+    
+    #quantosacar{
+        margin-top: 50px;
+        text-align: center;
+    }
+    .numtxt{
+        border-radius: 20px;
+        border-color: #ade8f400;
+        box-shadow: 5px  5px 10px rgba(0, 0, 0, 0.247);
+        display: block;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        
+    }
+    #depositeagrid{
+        margin-bottom: 15px;
+    }
+    #quantodepositar{
+        margin-top: 30px;
+        text-align: center;
+    }
+    #vocesacou{
+        margin-top: 15px;
+    }
+    .botoesdinamicos{
+        border-color: #023d8a00;
+        border-radius: 30px;
+        width: 60px;
+        height: 40px;
+        border-color:#023d8a00;
+        box-shadow: 5px 5px  10px #515151;
+        transition: 1s;
+        
+    }
+    .botoesdinamicos:hover{
+            background-color: white;
+            box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.447);
+            transition-delay: 0.5;
+    }
+    
+    #lista{
+        margin-top: 50px;
+    }
 
+}
 
 
