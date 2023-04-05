@@ -8,26 +8,49 @@
     <title>Cadastro banco</title>
 </head>
 <body>
-    <section>
-        <header>
-            <h1>
-                Cadastre-se agora ao Tbanco
-            </h1>
-        </header>
+<section>
+    <h1>Cadastre-se no Tbank</h1>
+    <form   method="post">
+        <p>
+            <input type="text" name="nome" id="nome" minlength="8" maxlength="20" placeholder="Nome Completo" autocomplete="name" size="10px">
+        </p>
+        <p>
+            <input type="text" name="
+            endereço" id="endereço" placeholder="Endereço" autocomplete="address-line1" size="10px">
+        </p>
+        <p> <input type="tel" name="tel" id="tel" placeholder="Telefone" autocomplete="tel-country-code" size="10px"></p>
 
-        <div id="container2">
-            <section id="container1">
-                <p class="cads">Email <input type="email" name="email" id="email"></p>
-                <p class="cads">Senha <input type="password" name="senha" id="senha"></p>
-                <input type="button" value="Cadastrar">
-             <!--<p id="insiranome">Nome <input type="text" name="nome" id="nome"></p>
-                <p id="insirasobrenome">Sobrenome <input type="text" name="sobrenome" id="sobrenome"></p>
-                <p id="telefone">Tel <input type="tel" name="tel" id="tel"></p> -->
-            </section>
-        </div>
-    </section>
+        <p>
+            Sexo <br>
 
-   
-    </div>
+           <input type="radio" name="sexo" id="M" value="Masc">
+           <label for="M">Masculino</label> 
+
+            <input type="radio" name="sexo" id="F" value="Fem">
+            <label for="F">Feminino</label> 
+
+            <input type="radio" name="sexo" id="O">
+            <label for="O">Outro</label>
+        </p>
+        <p>
+           <label for="foto">Adicione uma foto de perfil</label> 
+           <input type="file" name="foto" id="foto">
+        </p>
+
+        <p>
+            <input type="email" name="email" id="email" autocomplete="email" placeholder="Email">
+        </p>
+
+        <p>
+            <input type="password" name="senha" id="senha" placeholder="Senha" autocomplete="new-password">
+        </p>
+
+        <p id="resp"></p>
+
+        <input type="button" value="Cadastrar-se" id="cadastro">
+
+    </form>
+</section>
+<script src="script.js"></script>
 </body>
 </html>
