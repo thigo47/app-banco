@@ -11,5 +11,5 @@
 
 i.cadastro.addEventListener("click", function(){
     window.alert("")
-    
+      
 })
