@@ -1,14 +1,74 @@
+@font-face {
+  font-family: roboto ;
+  src: url(../midia/Fonts/Roboto/Roboto-Regular.ttf);
+}
+*{
+  padding: 0;
+  margin: 0;
+  font-family: roboto;
+}
+h1{
+  text-align: center;
+  color: rgba(255, 255, 255, 0.888);
+}
 #container1{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    height: 100vh; /* altura total da tela */
-    
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
   
-  .cads{
-    width: 50px;
-    height: 50px;
+}
+.formulario{
+  position: relative;
+  background-color: #A06CD5;
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 10px  10px  10px  rgba(0, 0, 0, 0.438);
+  color: white;
+}
+
+#container2{
+  width: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+}
+p{
+margin: 10px;
+}
+@keyframes animacao-fundo {
+  0% {
+    background-color: #5f46a5;
   }
-  
+  50% {
+    background-color: #7251B5;
+  }
+  60%{
+    background-color: #815AC0;
+  }
+  70% {
+    background-color: #7251B5;
+  }
+  100%{
+    background-color: #5f46a5;
+  }
+}
+body{
+  animation-name: animacao-fundo;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+.formulario:hover{
+  background-color: #48347d;
+  transform: scale(1.2);
+  transition-duration: 1s;
+  box-shadow: 10px  10px  30px  rgba(0, 0, 0, 0.438);
+}
+.formulario:not(:hover){
+  transition-duration: 1s;
+}
+
