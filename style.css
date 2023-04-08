@@ -6,7 +6,7 @@
     }
     
     header{
-        background-image: linear-gradient(to left , #03045E ,#023E8A);
+        background-image: linear-gradient(to left , #2e2151 ,#7251B5);
     
         color: white;
         font-weight: bolder;
@@ -18,7 +18,7 @@
         justify-content: space-between;
         align-items: flex-start;
         height: 100px;
-        background-image: linear-gradient(to left , #03045E ,#023E8A);
+        background-image: linear-gradient(to left , #2e2151 ,#7251B5);
         color: white;
         font-weight: bolder;
         
@@ -56,7 +56,7 @@
     }
     
     body{
-        background-image: linear-gradient(to bottom  ,#023E8A,  #ADE8F4 , #90E0EF);
+        background-image: linear-gradient(to bottom  ,#5f46a5,  #815AC0 ,  #7251B5);
         background-attachment: fixed;
     }
     
@@ -207,7 +207,7 @@
     }
     
     body{
-        background-image: linear-gradient(to bottom  ,#023E8A,  #ADE8F4 , #90E0EF);
+        background-image: linear-gradient(to bottom  ,#5f46a5,  #7251B5 , #90E0EF);
         background-attachment: fixed;
     }
     
@@ -296,5 +296,20 @@
     }
 
 }
-
+  /*@keyframes animacao-fundo {
+    0%, 100% {
+      background-color: #5f46a5;
+    }
+  
+    50% {
+      background-color: #7251B5;
+    }
+  
+    60% {
+      background-color: #815AC0;
+    }
+  
+    70% {
+      background-color: #7251B5;
+    }
 

@@ -3,8 +3,6 @@ let quantosacar = document.getElementById("quantosacar")
 let quantodepositar = document.getElementById("quantodepositar")
 let pdohistorico = document.getElementById("historico")
 
-let his = []
-
 let saldo = 1000;
 let saldoeuro = saldo.toLocaleString('de-DE', { style: 'currency', currency: 'EUR' });
 saldoconta.innerHTML+= saldoeuro
@@ -155,3 +153,11 @@ function esconder() {
         botaoclicado = true
     }
 }
+
+let valores = JSON.parse(localStorage.getItem("valores"))
+let res = document.getElementById("resp")
+let name = document.getElementById("nome")
+//res.innerHTML = valores
+name.innerHTML = "Olá " + valores[0] + " !"
+
+let his = []
