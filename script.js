@@ -169,8 +169,9 @@ let his = []
 
 //perfil menu 
 let menuAberto = false;
-
-let menup = addEventListener("click", function() {
+let imagemperfil = document.getElementById("imagemperfil")
+//arrumar bug do menu
+imagemperfil = addEventListener("click", function() {
     let info = document.getElementById("info");
 
     if (!menuAberto) {
