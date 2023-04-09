@@ -295,20 +295,22 @@
     }
 
 }
-  /*@keyframes animacao-fundo {
-    0%, 100% {
-      background-color: #5f46a5;
-    }
-  
-    50% {
-      background-color: #7251B5;
-    }
-  
-    60% {
-      background-color: #815AC0;
-    }
-  
-    70% {
-      background-color: #7251B5;
-    }
+ #lista{
+    top: 5px;
+    left: -25px;
+    width: 110px;
+    border-radius: 10px;
+    color: white;
+    background-color: #7251B5;
+
+ }
+ #info{
+    background-color: #2e2151;
+    width: 300px;
+    z-index: 1;
+    border-radius: 5px;
+    padding-left: 3px;
+    transition: 0s;
+    box-shadow: 5px 5px 5px #2e2151;
+ }
 

@@ -121,21 +121,26 @@ function teste(params) {
 
     if (his.length == 0 ) {
         window.alert("sem historico")
-    }else{
-        let testes = document.getElementById("testes")
+    } else {
+        let testes = document.getElementById("testes");
     
-        let testemenu = document.createElement("ul")
-        testemenu.id = "lista"
+        let testemenu = document.createElement("ul");
+        testemenu.id = "lista";
     
-        testes.appendChild(testemenu)
+        testes.appendChild(testemenu);
         
-        let item = document.createElement("li")
-        item.id  = "itemlista"
-        item.innerHTML=his
-    
-        lista.appendChild(item)
+        for (let i = 0; i < his.length; i++) { //usar um loop para criar um item de lista para cada elemento do array
+          let item = document.createElement("li");
+          item.id  = "itemlista";
+          item.innerHTML = his[i];
+      
+          lista.appendChild(item);
+        }
         
+        lista.style.position = "relative"; // definir a posição da lista como relativa
+        lista.style.zIndex = 1000; // definir o z-index da lista como 1000 para colocá-la à frente dos outros elementos
     }
+    
       
 }
 let botaoclicado = false
@@ -161,3 +166,40 @@ let name = document.getElementById("nome")
 name.innerHTML = "Olá " + valores[0] + " !"
 
 let his = []
+
+//perfil menu 
+let menuAberto = false;
+
+let menup = addEventListener("click", function() {
+    let info = document.getElementById("info");
+
+    if (!menuAberto) {
+        let nome = document.createElement("p");
+        nome.innerHTML = `Nome : ${valores[0]}`;
+        info.appendChild(nome);
+
+        let end = document.createElement("p");
+        end.innerHTML = `Endereço : ${valores[1]}`;
+        info.appendChild(end);
+
+        let tel = document.createElement("p");
+        tel.innerHTML = `Telefone : ${valores[2]}`;
+        info.appendChild(tel);
+
+        let sexo = document.createElement("p");
+        sexo.innerHTML = `Sexo : ${valores[6]}`;
+        info.appendChild(sexo);
+
+        info.style.transition = '1s';
+
+
+        menuAberto = true;
+    } else {
+        info.innerHTML = "";
+        menuAberto = false;
+    }
+});
+
+
+
+
